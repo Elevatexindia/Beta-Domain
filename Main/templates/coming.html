@@ -1,0 +1,264 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coming Soon | ElavateBharat</title>
+    <!-- SEO Meta Tags-->
+
+    <!-- Robot.txt -->
+    <meta name="robots" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="AdsBot-Google" content="index,follow" />
+    <meta property="og:site_name" content="https://elevatebharat.com">
+    <meta property="og:title" content="Coming Soon | ElavateBharat">
+    <meta property="og:description" content="Thank you for visiting ElavateBharat's." />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevatebharat.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://elevatebharat.com">
+    <meta name="application-name" content="Coming Soon | ElavateBharat" />
+    <meta name="apple-mobile-web-app-title" content="Coming Soon | ElavateBharat" />
+    <meta name="summary" content="Stay tuned for our official launch!" />
+	  <link rel = "icon" href = "{% static "img/landing/intro/icon.png" %}" type = "image/x-icon">
+    <!-- Favicon and Touch Icons-->
+    
+    <link rel="mask-icon" color="#6366f1" href="{% static "favicon/safari-pinned-tab.svg" %}}">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="{% static "favicon/browserconfig.xml" %}">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+      
+      
+    </script>
+    <!-- Page loading styles-->
+    <style>
+{% include "others/pageloading.html" %}
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{% static "css/theme.min.css" %}">
+    <!-- Customizer generated styles-->
+    <style id="customizer-styles">:root{--ar-primary:#1a3a5b;--ar-primary-rgb:26,58,91;--ar-link-color:#1a3a5b;--ar-link-hover-color:#012142;}.btn-primary{--ar-btn-bg:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#012142;--ar-btn-hover-border-color:#012142;--ar-btn-active-bg:#012142;--ar-btn-active-border-color:#012142;--ar-btn-disabled-bg:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}.btn-outline-primary{--ar-btn-color:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#1a3a5b;--ar-btn-hover-border-color:#1a3a5b;--ar-btn-active-bg:#1a3a5b;--ar-btn-active-border-color:#1a3a5b;--ar-btn-disabled-color:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}</style>
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Customizer modal-->
+    <div class="modal fade" id="customizer-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Your custom styles</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <p class="mb-3">Grab the generated styles below. Wrap them inside <code>&lt;style&gt;</code> tag and put in the <code>&lt;head&gt;</code> section of your HTML document.</p>
+            <p class="mb-4"><span class='fw-medium'>IMPORTANT:</span> In order for these styles to take effect you have to placed them below:<br><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;{% static "css/theme.min.css" %}&quot;&gt;</code></p>
+            <div class="bg-secondary overflow-hidden rounded-4">
+              <pre class="text-wrap bg-transparent border-0 text-dark p-4" id="custom-generated-styles"></pre>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary w-100 w-sm-auto ms-sm-3" type="button" id="copy-styles-btn"><i class="ai-copy me-2 ms-n1"></i>Copy styles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "others/customization.html" %}
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <div class="d-lg-flex position-relative h-100">
+
+        <!-- Logo visible on screens < 992px -->
+        <div class="d-flex d-lg-none justify-content-center pt-4 px-3 mx-auto" style="max-width: 420px;">
+          <a class="navbar-brand text-dark p-0 m-0" href="index.html">
+            <img src="{% static "img/landing/intro/ElevateBharat_Logo.png" %}" alt="icon of website" height="50" width="170"><!--ElavateBharat--></span>
+          </a>
+        </div>
+
+        <!-- Parallax gfx -->
+        <div class="w-sm-75 w-lg-100 p-4 overflow-hidden mx-auto mx-lg-0 order-lg-2" style="max-width: 1047px;">
+          <div class="p-sm-3 h-100">
+            <div class="position-relative h-100">
+              <div class="position-absolute top-0 end-0 h-100 bg-primary rounded-5 d-none d-lg-block" style="width: 93.9%;"></div>
+              <div class="position-absolute top-0 end-0 h-100 bg-primary rounded-4 d-lg-none" style="width: 93.9%;"></div>
+              <div class="parallax h-100 z-2 overflow-hidden">
+                <div class="parallax-layer d-flex align-items-end mb-n2 mb-lg-0" style="margin-top: 4.4%;" data-depth="0.1">
+                  <img src="{% static "img/coming/girl.png"%}" alt="Girl">
+                </div>
+              </div>
+              <div class="parallax position-absolute top-0 start-0 w-100 h-100 z-2">
+                <div class="parallax-layer d-flex align-items-end" style="padding-right: 75.6%; padding-bottom: 70%;" data-depth="-0.1">
+                  <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="239" height="233" viewBox="0 0 239 233" fill="none" xmlns:v="https://vecta.io/nano"><style><![CDATA[.B{stroke-miterlimit:10}.C{fill:currentColor}.D{stroke:#fff}.E{stroke-width:1.709}]]></style><g class="C"><g stroke="currentColor" stroke-width="1.923" class="B"><path d="M87.071 128.678s-2.681 19.31 1.872 35.431c5.767 20.454 27.526 48.523 31.467 47.495s-2.161-14.445-2.196-25.458c-.069-18.236 8.251-24.568 8.251-24.568l-39.394-32.9zM234.248 231.78c-11.856-4.287-14.572-17.53-16.71-27.584-1.236-5.778-2.357-11.729-6.055-17.022a26.14 26.14 0 0 0-6.714-6.622c-.844-.566-6.668-4.16-7.754-3.027 2.623-2.727 11.232 2.947 14.237 5.119 3.258 2.346 8.955 7.5 10.157 11.417.867-3.859-2.438-11.29-4.148-15.115-2.647-5.905-6.691-13.74-10.944-18.975-7.419-9.152-17.808-14.826-28.185-15.612-2.947-.22-6.148.358-8.967.867-25.539 4.599-35.269 38.493-11.741 60.126 6.286 5.778 13.832 9.302 21.632 10.446 7.385 1.075 17.831.451 22.049 9.418 1.341-5.177-5.986-15.785-11.255-19.541-2.381-1.699-5.131-3.316-7.812-4.079-2.704-.763-4.703-1.098-6.922-1.468 2.577-.658 1.283-.485 4.322-.693 2.323-.15 6.148.936 9.106 1.895 5.142 1.676 14.087 8.817 17.484 13.151 7.5 9.614 16.098 19.09 28.22 17.299z"/><path d="M137.176 173.155l34.129-35.448 5.994 5.771-34.129 35.448-5.994-5.771zM125.055 88.59s19.403-1.953 35.339 3.201c20.223 6.529 47.449 29.341 46.282 33.235-1.168 3.906-14.353-2.704-25.366-3.155-18.212-.751-24.857 7.327-24.857 7.327L125.055 88.59z"/><path d="M110.021 52.257c43.855 42.226 60.069 77.495 63.616 83.828l-38.25 39.729c-6.472-3.305-42.33-18.166-86.185-60.391C29.88 96.817 17.053 73.705 9.495 52.881L48.716 9.521c21.09 6.772 41.984 24.132 61.305 42.737z"/><path d="M9.334 7.859c9.823.381 22.708 2.6 36.69 7.095l-3.536 6.067c-6.448 11.048-15.381 20.432-26.105 27.4l-6.887 4.472C4.48 39.084 1.776 26.291 1.025 16.492.655 11.708 4.538 7.675 9.334 7.86zM123.31 126.077l.023-.023c2.577-2.681 8.159-.751 13.336 4.23s35.373 35.2 31.64 39.071l-.011.011-.012.012c-3.721 3.871-35.061-25.158-40.238-30.138s-7.315-10.482-4.738-13.163zM53.269 58.475c7.234-7.512 19.194-7.743 26.706-.509s7.743 19.195.508 26.706-19.195 7.742-26.706.508-7.742-19.195-.508-26.706z"/></g><path d="M11.795 1.007c9.823.381 22.708 2.6 36.69 7.095l-3.536 6.067c-6.448 11.048-15.381 20.431-26.105 27.4l-6.887 4.472c-5.016-13.81-7.72-26.602-8.471-36.402a8.01 8.01 0 0 1 8.309-8.632zm113.977 118.218l.023-.023c2.577-2.681 8.158-.751 13.335 4.229 3.467 3.34 18.143 17.982 26.348 28.463 4.045 5.165 6.518 9.326 5.293 10.608l-.012.012-.011.011c-1.248 1.295-5.617-1.109-11.06-5.073-10.77-7.835-25.746-21.76-29.178-25.065-5.189-4.98-7.327-10.481-4.738-13.162z" class="D E B"/><use xlink:href="#B"/></g><use xlink:href="#B" class="B D E"/><use xlink:href="#C" class="C"/><use xlink:href="#C" stroke-linecap="round" stroke-linejoin="round" class="B D E"/><path d="M165.466 151.443l14.284-14.838-5.998-5.767" class="C"/><path d="M165.466 151.443l14.284-14.838-5.998-5.767" class="B D E"/><path d="M139.627 166.293l5.986 5.766 14.064-14.607" class="C"/><path d="M139.627 166.293l5.986 5.766 14.064-14.607" class="B D E"/><use xlink:href="#D" class="C"/><use xlink:href="#D" class="B D E"/><use xlink:href="#E" class="C"/><use xlink:href="#E" class="B D E"/><use xlink:href="#F" class="C"/><g class="B D E"><use xlink:href="#F"/><path d="M55.73 51.622c7.234-7.511 19.194-7.742 26.706-.508s7.742 19.195.508 26.706-19.194 7.743-26.706.508-7.743-19.195-.508-26.706z" class="C"/></g><defs ><path id="B" d="M88.839 139.945c.243 5.512.948 11.614 2.554 17.311 5.766 20.454 27.526 48.523 31.467 47.495s-2.161-14.445-2.196-25.458c-.023-7.627 1.41-13.162 3.097-17.033"/><path id="C" d="M146.526 171.123c.393 9.984 3.872 18.675 13.359 27.399 6.287 5.778 13.833 9.303 21.633 10.447 7.384 1.075 17.831.451 22.049 9.418 1.34-5.177-5.986-15.785-11.256-19.541-2.38-1.699-5.13-3.317-7.811-4.079-2.705-.763-4.704-1.098-6.923-1.468 2.577-.659 1.283-.485 4.322-.693 2.323-.151 6.148.936 9.107 1.895 5.142 1.676 14.086 8.817 17.484 13.151 7.511 9.591 16.109 19.067 28.231 17.276-11.856-4.287-14.572-17.531-16.71-27.584-1.236-5.778-2.357-11.73-6.055-17.022-1.814-2.589-4.091-4.842-6.714-6.622-.844-.566-6.564-3.213-7.754-3.028 2.993-.462 11.232 2.947 14.237 5.12 3.259 2.346 8.956 7.5 10.157 11.417.867-3.86-2.438-11.29-4.148-15.115-2.646-5.905-6.691-13.74-10.944-18.975-7.742-9.546-18.778-15.069-29.572-15.474"/><path id="D" d="M145.509 81.726c5.524.439 11.649 1.375 17.334 3.213 20.223 6.529 47.449 29.341 46.282 33.235-1.167 3.906-14.352-2.704-25.365-3.155-6.067-.254-10.851.474-14.538 1.561"/><path id="E" d="M153.448 152.761l-15.6 16.201c-2.023-1.028-6.888-3.189-13.972-6.945-8.724-4.634-20.8-11.695-35.026-22.084-11.256-8.228-23.852-18.535-37.187-31.374-19.322-18.605-32.149-41.717-39.706-62.541"/><path id="F" d="M48.486 8.09c21.09 6.772 44.664 18.698 63.998 37.314 43.855 42.226 60.068 77.494 63.616 83.827l-15.613 16.225"/></defs></svg>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 59.35% 70.4% 30.4%;" data-depth="0.2">
+                  <svg class="text-white" width="100" height="90" viewBox="0 0 100 90" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.8715 89.2559L28.5411 88.5681L25.5817 77.117L38.7756 75.0037L35.4411 62.0913L48.6485 59.9721L45.3139 47.0597L58.5079 44.9464L55.1673 32.0206L68.3747 29.9013L65.0402 16.989L78.2551 14.8502L74.553 0.457076L71.8699 1.15091L74.8352 12.6155L61.6008 14.7467L64.9549 27.6666L51.7339 29.7918L55.082 42.6982L41.8746 44.8175L45.2091 57.7299L32.0017 59.8491L35.3497 72.7555L22.1423 74.8748L25.8715 89.2559Z"/>
+                  </svg>                  
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 11.58% 89.64% 81.28%;" data-depth="-0.15">
+                  <svg class="text-warning" width="69" height="55" viewBox="0 0 69 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.2836 55L68.9438 53.6761L68.704 51.3308L58.6187 52.3774L58.5303 40.9663L47.1702 42.1515L47.0692 30.7279L35.709 31.9131L35.6207 20.4895L24.2479 21.6747L24.1469 10.251L12.7741 11.4363L12.6731 0L0.000184965 1.29872L0.240014 3.64399L10.338 2.61004L10.4389 14.0463L21.8117 12.8611L21.9001 24.2847L33.2729 23.1121L33.3612 34.5232L44.734 33.3379L44.8224 44.7616L56.1952 43.5764L56.2836 55Z"/>
+                  </svg>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 70.94% 54.29% 24.4%;" data-depth="-0.35">
+                  <svg class="text-warning" width="45" height="45" viewBox="0 0 45 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5089 45C34.9147 45 45 34.9187 45 22.5C45 10.0991 34.9147 0 22.5089 0C10.1031 0 -1.8272e-06 10.0813 -1.8272e-06 22.5C-1.8272e-06 34.9187 10.1031 45 22.5089 45ZM22.5089 3.35449C33.0762 3.35449 41.662 11.9548 41.662 22.5178C41.662 33.0809 33.0583 41.6812 22.5089 41.6812C11.9417 41.6812 3.33795 33.0809 3.33795 22.5178C3.33795 11.9548 11.9417 3.35449 22.5089 3.35449Z"/>
+                  </svg>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 69.6% 92.57% 26.37%;" data-depth="-0.25">
+                  <svg class="text-white" width="39" height="38" viewBox="0 0 39 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.6989 38L39 11.0113L11.3011 0L7.10921e-07 26.9886L27.6989 38ZM35.6207 12.4013L26.2724 34.7074L3.37926 25.5987L12.7276 3.2926L35.6207 12.4013Z"/>
+                  </svg>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 17.48% 74.58% 79.94%;" data-depth="0.2">
+                  <div class="ratio ratio-1x1 border border-white border-2 rounded-circle"></div>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 87.38% 66.96% 11.27%;" data-depth="0.15">
+                  <div class="ratio ratio-1x1 bg-white rounded-circle"></div>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 46.23% 91.84% 52.43%;" data-depth="0.35">
+                  <div class="ratio ratio-1x1 bg-warning rounded-circle"></div>
+                </div>
+                <div class="parallax-layer d-flex align-items-end" style="padding: 0 3.6% 56.17% 94.93%;" data-depth="0.4">
+                  <div class="ratio ratio-1x1 bg-warning rounded-circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Page content -->
+        <div class="d-flex flex-column align-items-center w-lg-50 px-3 px-sm-4 px-xl-5 pt-lg-5 order-lg-1">
+
+          <!-- Logo visible on screens > 991px -->
+          <div class="w-100 d-none d-lg-block" style="max-width: 420px;">
+            <a class="navbar-brand text-dark p-0 m-0" href="/home/">
+              <img src="{% static "img/landing/intro/ElevateBharat_Logo.png" %}" alt="icon of website" height="50" width="170"><!--ElavateBharat--></span>
+            </a>
+          </div>
+
+          <!-- Text + Countdown + Form -->
+          <div class="w-100 text-center text-lg-start mt-auto pt-lg-5 pb-5" style="max-width: 420px;">
+            <h1 class="display-3 mb-4">We are coming soon</h1>
+            <p class="fs-lg pb-3 mb-4 mb-xl-5">We can't wait to unveil what we've been working on, and we appreciate your patience. Thanks for being a part of our journey!</p>
+
+            <!-- Countdown -->
+            <div class="countdown d-flex flex-wrap justify-content-center justify-content-lg-start pb-3 mb-4 mb-xl-5" data-countdown-date="01/01/2026 12:00:00">
+              <div class="text-center mb-2">
+                <div class="bg-secondary rounded-1 p-2">
+                  <div class="h3 fw-medium mb-0 mx-1" data-days></div>
+                </div>
+                <span class="fs-sm">days</span>
+              </div>
+              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+              <div class="text-center mb-2">
+                <div class="bg-secondary rounded-1 p-2">
+                  <div class="h3 fw-medium mb-0 mx-1" data-hours></div>
+                </div>
+                <span class="fs-sm">hours</span>
+              </div>
+              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+              <div class="text-center mb-2">
+                <div class="bg-secondary rounded-1 p-2">
+                  <div class="h3 fw-medium mb-0 mx-1" data-minutes></div>
+                </div>
+                <span class="fs-sm">mins</span>
+              </div>
+              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
+              <div class="text-center mb-2">
+                <div class="bg-secondary rounded-1 p-2">
+                  <div class="h3 fw-medium mb-0 mx-1" data-seconds></div>
+                </div>
+                <span class="fs-sm">secs</span>
+              </div>
+            </div>
+
+            <!-- Notification form -->
+            <form class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-primary">Notify me</button>
+            </form>
+          </div>
+
+          <!-- Social links -->
+          <div class="w-100 mt-auto pb-5" style="max-width: 420px;">
+            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+              <a class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle me-3" href="https://twitter.com/elevatebharat" aria-label="twitter">
+                <i class="ai-twitter"></i>
+              </a>
+              <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle" href="https://www.instagram.com/elevatebharat" aria-label="Instagram">
+                <i class="ai-instagram"></i>
+              </a>
+              <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="https://www.linkedin.com/company/elevatebharat/" aria-label="LinkedIn">
+                <i class="ai-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="{% static "vendor/timezz/dist/timezz.js" %}"></script>
+    <script src="{% static "vendor/parallax-js/dist/parallax.min.js" %}"></script>
+    <script src="{% static "vendor/bootstrap/dist/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js" %}"></script>
+    <!-- Main theme script-->
+    <script src="{% static "js/theme.min.js" %}"></script>
+    <!-- Customizer-->
+    <script>!function(){function e(e){return localStorage.getItem(e)}function r(e,r){localStorage.setItem(e,r)}var t=document.getElementById("customizer-styles"),n=document.getElementById("custom-generated-styles"),o=`\n    :root {\n      ${e("theme-primary")&&`--ar-primary: ${e("theme-primary")};`}\n      ${e("theme-primary-rgb")&&`--ar-primary-rgb: ${e("theme-primary-rgb")};`}\n      ${e("theme-warning")&&`--ar-warning-rgb: ${e("theme-warning")};`}\n      ${e("theme-warning-rgb")&&`--ar-warning-rgb: ${e("theme-warning-rgb")};`}\n      ${e("theme-info")&&`--ar-info-rgb: ${e("theme-info")};`}\n      ${e("theme-info-rgb")&&`--ar-info-rgb: ${e("theme-info-rgb")};`}\n      ${e("theme-success")&&`--ar-success-rgb: ${e("success-info")};`}\n      ${e("theme-success-rgb")&&`--ar-success-rgb: ${e("success-info-rgb")};`}\n      ${e("theme-danger")&&`--ar-danger-rgb: ${e("danger-info")};`}\n      ${e("theme-danger-rgb")&&`--ar-danger-rgb: ${e("danger-info-rgb")};`}\n      ${e("theme-font-family")&&`--ar-body-font-family: ${e("theme-font-family")};`}\n      ${e("theme-root-font-size")&&`--ar-root-font-size: ${e("theme-root-font-size")};`}\n      ${e("theme-body-font-size")&&`--ar-body-font-size: ${e("theme-body-font-size")};`}\n      ${e("theme-border-width")&&`--ar-border-width: ${e("theme-border-width")};`}\n      ${e("theme-border-radius")&&`--ar-border-radius: ${e("theme-border-radius")};`}\n      ${e("theme-border-radius-sm")&&`--ar-border-radius-sm: ${e("theme-border-radius-sm")};`}\n      ${e("theme-border-radius-lg")&&`--ar-border-radius-lg: ${e("theme-border-radius-lg")};`}\n      ${e("theme-border-radius-xl")&&`--ar-border-radius-xl: ${e("theme-border-radius-xl")};`}\n      ${e("theme-border-radius-2xl")&&`--ar-border-radius-2xl: ${e("theme-border-radius-2xl")};`}\n      ${e("theme-primary")&&`--ar-link-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-link-hover-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n    }\n    .btn-primary {\n      ${e("theme-primary")&&`--ar-btn-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-warning {\n      ${e("theme-warning")&&`--ar-btn-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-info {\n      ${e("theme-info")&&`--ar-btn-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-success {\n      ${e("theme-success")&&`--ar-btn-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-danger {\n      ${e("theme-danger")&&`--ar-btn-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n    .btn-outline-primary {\n      ${e("theme-primary")&&`--ar-btn-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-outline-warning {\n      ${e("theme-warning")&&`--ar-btn-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-outline-info {\n      ${e("theme-info")&&`--ar-btn-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-outline-success {\n      ${e("theme-success")&&`--ar-btn-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-outline-danger {\n      ${e("theme-danger")&&`--ar-btn-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n  `,a=o;a=o.replace(/null|\s*(?![A-Z])/g,"");t.append(a),a.split("}").map(function(e){-1!==e.indexOf("{--")&&n.append(e+"}")});var i={root:t.sheet.cssRules[0],primaryBtn:t.sheet.cssRules[1],warningBtn:t.sheet.cssRules[2],infoBtn:t.sheet.cssRules[3],successBtn:t.sheet.cssRules[4],dangerBtn:t.sheet.cssRules[5],primaryOutlineBtn:t.sheet.cssRules[6],warningOutlineBtn:t.sheet.cssRules[7],infoOutlineBtn:t.sheet.cssRules[8],successOutlineBtn:t.sheet.cssRules[9],dangerOutlineBtn:t.sheet.cssRules[10]};function b(){n.innerHTML=i.root.cssText.replace(/null|\s*(?![A-Z])/g,""),n.innerHTML+=-1===i.primaryBtn.cssText.indexOf("{ }")?i.primaryBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningBtn.cssText.indexOf("{ }")?i.warningBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoBtn.cssText.indexOf("{ }")?i.infoBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successBtn.cssText.indexOf("{ }")?i.successBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerBtn.cssText.indexOf("{ }")?i.dangerBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.primaryOutlineBtn.cssText.indexOf("{ }")?i.primaryOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningOutlineBtn.cssText.indexOf("{ }")?i.warningOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoOutlineBtn.cssText.indexOf("{ }")?i.infoOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successOutlineBtn.cssText.indexOf("{ }")?i.successOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerOutlineBtn.cssText.indexOf("{ }")?i.dangerOutlineBtn.cssText.replace(/ /g,""):""}function s(e){var r=0,t=0,n=0;return 4==e.length?(r="0x"+e[1]+e[1],t="0x"+e[2]+e[2],n="0x"+e[3]+e[3]):7==e.length&&(r="0x"+e[1]+e[2],t="0x"+e[3]+e[4],n="0x"+e[5]+e[6]),+r+","+ +t+","+ +n}function c(e,r){var t=parseInt(e.replace("#",""),16),n=Math.round(2.55*r),o=(t>>16)+n,a=(t>>8&255)+n,i=(255&t)+n;return"#"+(16777216+65536*(o<255?o<1?0:o:255)+256*(a<255?a<1?0:a:255)+(i<255?i<1?0:i:255)).toString(16).slice(1)}for(var l=document.querySelectorAll("#theme-colors .color-swatch"),d=0;d<l.length;d++){var m=l[d].querySelector("label"),h=l[d].querySelector('input[type="color"]');colorInput=l[d].querySelector('input[type="text"]'),colorInput.value=e(l[d].id)||colorInput.value,h.value=e(l[d].id)||h.value,m.style.backgroundColor=e(l[d].id)||h.value,h.addEventListener("input",function(e){var n=e.target.parentElement.querySelector("label"),o=e.target.parentElement.querySelector('input[type="text"]'),a=e.target.value;t.sheet.cssRules[d+1];r("theme-"+e.target.id,a),r("theme-"+e.target.id+"-rgb",s(a)),r("theme-"+e.target.id+"-btn-hover-active-border-bg-color",c(a,-10)),n.style.backgroundColor=a,o.value=a,i.root.style.setProperty("--ar-"+e.target.id,a),i.root.style.setProperty("--ar-"+e.target.id+"-rgb",s(a)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",a),"primary"===e.target.id&&(r("theme-link-hover-color",c(a,-10)),i.root.style.setProperty("--ar-link-color",a),i.root.style.setProperty("--ar-link-hover-color",c(a,-10))),b()}),colorInput.addEventListener("change",function(e){var t=e.target.parentElement.querySelector("label"),n=e.target.parentElement.querySelector('input[type="color"]'),o=e.target.value;0!=o.length&&o.startsWith("#")&&(r("theme-"+n.id,o),r("theme-"+n.id+"-rgb",s(o)),r("theme-"+n.id+"-btn-hover-active-border-bg-color",c(o,-10)),t.style.backgroundColor=o,n.value=o,i.root.style.setProperty("--ar-"+n.id,o),i.root.style.setProperty("--ar-"+n.id+"-rgb",s(o)),i[n.id+"Btn"].style.setProperty("--ar-btn-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",o),"primary"===n.id&&(r("theme-link-hover-color",c(o,-10)),i.root.style.setProperty("--ar-link-color",o),i.root.style.setProperty("--ar-link-hover-color",c(o,-10))),b())})}var g=document.getElementById("font-url"),u=document.getElementById("google-font");u.href=e("theme-font-url")||g.value,g.value=e("theme-font-url")||g.value,g.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-url",t),u.href=t});var v=document.getElementById("body-font-family");v.value=e("theme-font-family")||v.value,v.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-family",t),i.root.style.setProperty("--ar-body-font-family",t),b()});var $=document.getElementById("root-font-size");$.value=e("theme-root-font-size")||$.value,$.addEventListener("change",function(e){var t=e.target.value;r("theme-root-font-size",t),i.root.style.setProperty("--ar-root-font-size",t),b()});var y=document.getElementById("body-font-size");y.value=e("theme-body-font-size")||y.value,y.addEventListener("change",function(e){var t=e.target.value;r("theme-body-font-size",t),i.root.style.setProperty("--ar-body-font-size",t),b()});var p=document.getElementById("border-width");p.value=parseInt(e("theme-border-width"))||p.value,p.addEventListener("input",function(e){var t=e.target.value;r("theme-border-width",t+"px"),i.root.style.setProperty("--ar-border-width",t+"px"),b()});var f=document.getElementById("border-radius");f.value=parseFloat(e("theme-border-radius"))||f.value,f.addEventListener("input",function(e){var t=e.target.value;r("theme-border-radius",t+"rem"),i.root.style.setProperty("--ar-border-radius",t+"rem"),b()});var B=document.querySelectorAll('#theme-border-radiuses input[type="number"');for(d=0;d<B.length;d++)B[d].value=e("theme-"+B[d].id+"multiplier")||B[d].value,B[d].addEventListener("input",function(e){var t=e.target.value;r("theme-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),r("theme-"+e.target.id+"multiplier",t),i.root.style.setProperty("--ar-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),b()});var w=document.getElementById("customizer"),x=document.getElementById("customizer-btns");e("theme-customizer-btns")&&x.classList.remove("d-none"),w.addEventListener("change",function(e){r("theme-customizer-btns",!0),x.classList.remove("d-none")}),document.getElementById("customizer-reset-btn").addEventListener("click",function(){for(var e=[],r=0;r<localStorage.length;r++)"theme"==localStorage.key(r).substring(0,5)&&e.push(localStorage.key(r));for(r=0;r<e.length;r++)localStorage.removeItem(e[r]);window.location.reload()});var P=document.getElementById("copy-styles-btn");P.addEventListener("click",function(){var e=document.createRange();e.selectNode(n),window.getSelection().removeAllRanges(),window.getSelection().addRange(e),navigator.clipboard.writeText(n.innerHTML),this.innerHTML='<i class="ai-check me-2 ms-n1"></i>Copied!',setTimeout(function(){P.innerHTML='<i class="ai-copy me-2 ms-n1"></i>Copy styles'},2e3)})}();</script>
+  </body>
+</html>

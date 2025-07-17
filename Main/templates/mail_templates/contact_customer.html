@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Contacting Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .message {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .powered-by {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .powered-by a {
+            color: #333;
+            text-decoration: none;
+        }
+        .powered-by a:hover {
+            text-decoration: underline;
+        }
+        .powered-by img {
+            max-width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+        .marketing {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9f4fc;
+            border-radius: 5px;
+        }
+        .marketing h3 {
+            color: #253357;
+            text-align: center;
+        }
+        .marketing ul {
+            list-style: none;
+            padding: 0;
+        }
+        .marketing ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Thank You for Contacting Us</h2>
+        </div>
+        <div class="logo">
+            <a href="http://www.elevatebharat.com" target="_blank"><img src="https://elevatebharat.com/static/img/landing/intro/ElevateBharat_Logo.png" alt="ElevateBharat Logo"></a>
+        </div>
+        <div class="content">
+            <p>Dear Customer,</p>
+            <!--<p>Dear {{ name }},</p>-->
+            <p class="message">Thank you for contacting us. We have received your message and will get back to you as soon as possible.</p>
+            <!--<p class="highlight">Your Name: {{ name }}</p>
+            <p class="highlight">Your Company: {{ company }}</p>
+            <p class="highlight">Your Email: {{ email }}</p>
+            <p><strong>Services Requested:</strong></p>
+            <ul>
+                {% if website_development %}
+                    <li><p class="highlight">Website Development</p></li>
+                {% endif %}
+                {% if app_development %}
+                    <li><p class="highlight">App Development</p></li>
+                {% endif %}
+                {% if marketing %}
+                    <li><p class="highlight">Marketing</p></li>
+                {% endif %}
+            </ul>-->
+            <p>If this request wasn’t initiated by you, please ignore this email.</p>
+            <p>Thank you again, we look forward to assisting you.</p>
+            <p>Best regards,<br>{{ company_name }}<br>{{ tagline }}<br>support@elevatebharat.com</p>
+
+            <!-- Marketing Section -->
+            <div class="marketing">
+                <h3>Explore Our Services</h3>
+                <ul>
+                    <li><strong>Website Development:</strong> Get a professional and responsive website that represents your brand.</li>
+                    <li><strong>College Project Development:</strong> Need help with your college project? We've got you covered.</li>
+                    <li><strong>Digital Marketing:</strong> Boost your online presence with our tailored digital marketing solutions.</li>
+                    <li><strong>Design and Branding:</strong> Create a strong visual identity with our design and branding services.</li>
+                    <li><strong>eCommerce Solutions:</strong> Launch your online store with our custom eCommerce solutions.</li>
+                    <li><strong>Customer Support:</strong> Ensure your customers are always satisfied with our reliable support services.</li>
+                    <li><strong>SEO Services:</strong> Improve your search engine rankings and drive more traffic to your website.</li>
+                    <li><strong>Social Media Marketing:</strong> Engage with your audience and grow your brand on social media platforms.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; {{ company_name }} {{ year }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,845 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project | ElavateBharat</title>
+    <!-- SEO Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Robot.txt -->
+    <meta property="og:site_name" content="https://elevatebharat.com">
+    <meta property="og:title" content="Project | ElavateBharat">
+    <meta property="og:description" content="Connect with ElavateBharat: Your gateway to professional web development, college projects, and exceptional customer service. Reach out to our dedicated team for assistance, inquiries, and collaboration. Let's start a conversation today!" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevatebharat.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://elevatebharat.com">
+    <meta name="application-name" content="Project | ElavateBharat" />
+    <meta name="apple-mobile-web-app-title" content="Project | ElavateBharat" />
+	  <link rel = "icon" href = "{% static "img/landing/intro/icon.png" %}" type = "image/x-icon">
+    <!-- Favicon and Touch Icons-->
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <link rel="mask-icon" color="#6366f1" href="{% static "favicon/safari-pinned-tab.svg" %}">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="{% static "favicon/browserconfig.xml" %}">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+      
+      
+    </script>
+{% include "others/pageloading.html" %}
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{% static "css/theme.min.css" %}">
+    <!-- Customizer generated styles-->
+    <style id="customizer-styles">:root{--ar-primary:#1a3a5b;--ar-primary-rgb:26,58,91;--ar-link-color:#1a3a5b;--ar-link-hover-color:#012142;}.btn-primary{--ar-btn-bg:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#012142;--ar-btn-hover-border-color:#012142;--ar-btn-active-bg:#012142;--ar-btn-active-border-color:#012142;--ar-btn-disabled-bg:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}.btn-outline-primary{--ar-btn-color:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#1a3a5b;--ar-btn-hover-border-color:#1a3a5b;--ar-btn-active-bg:#1a3a5b;--ar-btn-active-border-color:#1a3a5b;--ar-btn-disabled-color:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}</style>
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+    <style>
+        *,
+        ::after,
+        ::before {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        html {
+          font-family: sans-serif;
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: transparent;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          -ms-overflow-style: scrollbar;
+          scroll-behavior: smooth;
+          font-size: 20px;
+        }
+        body {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          font-family: Gilroy-Regular;
+          overflow-x: hidden;
+        }
+        
+        
+        /* Gilroy */
+        @font-face {
+          font-family: Gilroy-Black;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Black.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-BlackItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BlackItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Bold;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Bold.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-BoldItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BoldItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-ExtraBold;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBold.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-ExtraBoldItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBoldItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Heavy;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Heavy.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-HeavyItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-HeavyItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Light;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Light.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-LightItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-LightItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Medium;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Medium.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-MediumItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-MediumItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Regular;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Regular.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-RegularItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-RegularItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-SemiBold;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBold.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-SemiBoldItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBoldItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-Thin;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Thin.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-ThinItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ThinItalic.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-UltraLight;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLight.ttf);
+        }
+        @font-face {
+          font-family: Gilroy-UltraLightItalic;
+          src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLightItalic.ttf);
+        }
+        </style>
+        <style>
+          :root {
+          --primary: #ff9800;
+          --primary-hover: #029cf3;
+          --primary-hover-solid: #004b7673;
+          --color-0: #f8f9fa;
+          --color-1: #f1f3f5;
+          --color-2: #e9ecef;
+          --color-3: #dee2e6;
+          --color-4: #ced4da;
+          --color-5: #adb5bd;
+          --color-6: #868e96;
+          --color-7: #495057;
+          --color-8: #343a40;
+          --color-9: #212529;
+          --text: #041434;
+          --font-bold: Gilroy-Bold;
+          --font-xbold: Gilroy-ExtraBold;
+          --font-semibold: Gilroy-SemiBold;
+          --font-heavy: Gilroy-Heavy;
+          --font-medium: Gilroy-Medium;
+          --font-regular: Gilroy-Regular;
+          --font-light: Gilroy-Light;
+          --font-thin: Gilroy-Thin;
+          --font-ultralight: Gilroy-ExtraLight;
+          --shadow-xs: 0px 4px 8px rgba(0, 0, 0, 0.12);
+          --shadow-sm: 0 5px 10px rgba(0, 0, 0, 0.12);
+          --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
+          --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.12);
+          --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.12);
+        }
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 100%;
+        }
+        
+        .header .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+          position: relative;
+          margin: 30px 0;
+        }
+        
+        .header .logo img {
+          width: 185px;
+          height: auto;
+        }
+        
+        .main {
+          width: 100%;
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        
+        .delivery {
+          margin: 0 auto;
+          max-width: 1080px;
+          width: 100%;
+          position: relative;
+        }
+        
+        .delivery-progress {
+          width: 100%;
+          position: relative;
+          margin-bottom: 70px;
+        }
+        
+        .delivery-progress .message {
+          font-size: 30px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 40px;
+          color: var(--color-8);
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-progress .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          position: relative;
+        }
+        
+        .delivery-progress .delivery-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          flex: 1 1;
+        }
+        
+        .delivery-progress .delivery-item .icon {
+          position: relative;
+          width: 80px;
+          height: 80px;
+          border-radius: 50px;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid #afbbca;
+          color: #afbbca;
+          margin-bottom: 18px;
+          z-index: 2;
+        }
+        
+        .delivery-progress .delivery-item .icon svg {
+          fill: currentColor;
+          position: relative;
+          z-index: 1;
+        }
+        
+        .delivery-progress .delivery-item .title {
+          font-size: 15px;
+          font-weight: 500;
+          color: #6e7787;
+          text-align: center;
+          line-height: normal;
+        }
+        
+        .delivery-progress .delivery-item:not(:first-child):before {
+          content: "";
+          position: absolute;
+          right: 50%;
+          top: 40px;
+          width: 100%;
+          height: 4px;
+          background: #afbbca;
+        }
+        
+        .delivery-progress .delivery-item.active .icon {
+          color: white;
+          background: var(--primary);
+          border: 3px solid var(--primary);
+        }
+        
+        .delivery-progress .delivery-item.active:not(:first-child):before {
+          background: var(--primary);
+        }
+        
+        .delivery-progress .delivery-item.last-active .icon {
+          color: white;
+          background: #0bc15c;
+          border: 3px solid #0bc15c;
+        }
+        
+        .delivery-progress .delivery-item.last-active:not(:first-child):before {
+          background: #0bc15c;
+        }
+        
+        .delivery-information {
+          width: 100%;
+          position: relative;
+          margin-bottom: 70px;
+        }
+        
+        .delivery-information .message {
+          font-size: 30px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 40px;
+          color: var(--color-8);
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-information .delivery-content {
+          background: #f4f7fa;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+        }
+        
+        .delivery-information .delivery-body {
+          background: white;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+        }
+        
+        .delivery-tracking-number {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        
+        .delivery-tracking-number .title {
+          font-size: 13px;
+          color: #6e7787;
+          font-weight: 400;
+        }
+        
+        .delivery-tracking-number .number {
+          margin-top: 5px;
+          font-weight: 900;
+          color: var(--primary);
+          font-size: 30px;
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-info {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 30px;
+        }
+        
+        .delivery-info .item {
+          width: 25%;
+          margin-bottom: 30px;
+        }
+        
+        .delivery-info .item:nth-last-child(-n + 4) {
+          margin-bottom: 0px;
+        }
+        
+        .delivery-info .item .title {
+          font-size: 13px;
+          color: #6e7787;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+        
+        .delivery-info .item .content {
+          font-weight: 500;
+          font-size: 15px;
+          color: #273142;
+          word-wrap: break-word;
+          hyphens: auto;
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-products {
+          width: 100%;
+          position: relative;
+          margin-bottom: 70px;
+        }
+        
+        .delivery-products .message {
+          font-size: 30px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 40px;
+          color: var(--color-8);
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-products .row {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          background: #f4f7fa;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+        }
+        
+        .product-card {
+          width: 100%;
+          height: 300px;
+          position: relative;
+          display: flex;
+          background: white;
+          overflow: hidden;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        
+        .product-card:last-child {
+          margin-bottom: 0px;
+        }
+        
+        .product-card .product-image {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          height: 100%;
+          border-right: 1px solid var(--color-1);
+        }
+        
+        .product-card .product-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          pointer-events: none;
+        }
+        
+        .product-card .product-content {
+          width: 60%;
+        }
+        
+        .product-info {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 30px;
+        }
+        
+        .product-info .item {
+          width: 33%;
+          margin-bottom: 30px;
+        }
+        
+        .product-info .item:nth-last-child(-n + 3) {
+          margin-bottom: 0px;
+        }
+        
+        .product-info .item .title {
+          font-size: 13px;
+          color: #6e7787;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+        
+        .product-info .item .content {
+          font-weight: 500;
+          font-size: 15px;
+          color: #273142;
+          word-wrap: break-word;
+          hyphens: auto;
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-detail-table {
+          width: 100%;
+          position: relative;
+          margin-bottom: 70px;
+        }
+        
+        .delivery-detail-table .message {
+          font-size: 30px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 40px;
+          color: var(--color-8);
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-detail-table .body {
+          background: #f4f7fa;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+        }
+        
+        .delivery-detail-table .content {
+          background: white;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+        }
+        
+        .delivery-detail-table .table-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #273142;
+          color: #fff;
+          border-radius: 10px 10px 0 0;
+        }
+        
+        .delivery-detail-table .table-header .item {
+          flex: 1 0;
+          border-right: 1px solid #6e7787;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          padding: 1.3em;
+          font-size: 14px;
+          font-family: var(--font-medium);
+        }
+        
+        .delivery-detail-table .table-header .item:last-child {
+          border-right: none;
+        }
+        
+        .delivery-detail-table .table-main {
+          border-left: 1px solid #f4f7fa;
+          border-right: 1px solid #f4f7fa;
+          border-radius: 0 0 10px 10px;
+          overflow: hidden;
+        }
+        
+        .delivery-detail-table .table-main .row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid #f4f7fa;
+        }
+        
+        .delivery-detail-table .table-main .item {
+          flex: 1 0;
+          border-right: 1px solid #f4f7fa;
+          align-items: center;
+          display: flex;
+          padding: 1.3em;
+          font-size: 14px;
+          line-height: normal;
+        }
+        
+        .delivery-detail-table .table-main .item:last-child {
+          border-right: none;
+        }
+        
+        .delivery-detail-table .table-main .item .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          margin-right: 5px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+          .delivery {
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        
+          .delivery-progress .row {
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+          }
+        
+          .delivery-progress .delivery-item {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 15px;
+          }
+        
+          .delivery-progress .delivery-item .icon {
+            margin-bottom: 0;
+            margin-right: 18px;
+            width: 50px;
+            height: 50px;
+          }
+          .delivery-progress .delivery-item .icon svg {
+            width: 24px;
+            height: 24px;
+          }
+        
+          .delivery-progress .delivery-item:not(:first-child):before {
+            left: 7%;
+            top: -25px;
+            width: 4px;
+            height: 100%;
+          }
+          .delivery-progress .message {
+            margin-bottom: 25px;
+          }
+          .delivery-progress .delivery-item .title {
+            font-size: 16px;
+          }
+          .delivery-products .message {
+            margin-bottom: 25px;
+          }
+          .product-card {
+            height: auto;
+            flex-direction: column;
+          }
+        
+          .product-card .product-image {
+            width: 100%;
+            border-right: 0;
+            border-bottom: 1px solid var(--color-1);
+          }
+        
+          .product-info {
+            padding: 20px;
+            width: 100%;
+          }
+          .product-card .product-content {
+            width: 100%;
+          }
+        
+          .product-info .item {
+            width: 50%;
+            margin-bottom: 30px;
+          }
+          .product-info .item {
+            width: 50%;
+            margin-bottom: 30px;
+          }
+          .product-info .item:nth-last-child(-n + 3) {
+            margin-bottom: 30px;
+          }
+          .product-info .item:nth-last-child(-n + 2) {
+            margin-bottom: 0px !important;
+          }
+          .delivery-information .message {
+            margin-bottom: 25px;
+          }
+        
+          .delivery-info {
+            padding: 20px;
+          }
+          .delivery-info .item {
+            width: 50%;
+          }
+          .delivery-info .item:nth-last-child(-n + 4) {
+            margin-bottom: 30px;
+          }
+          .delivery-info .item:nth-last-child(-n + 2) {
+            margin-bottom: 0px !important;
+          }
+        
+          .delivery-detail-table .content {
+            background: white;
+            border-radius: 10px;
+            padding: 0px;
+          }
+        
+          .delivery-detail-table {
+            margin-bottom: 0;
+          }
+        }
+        </style>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Customizer modal-->
+    <div class="modal fade" id="customizer-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Your custom styles</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <p class="mb-3">Grab the generated styles below. Wrap them inside <code>&lt;style&gt;</code> tag and put in the <code>&lt;head&gt;</code> section of your HTML document.</p>
+            <p class="mb-4"><span class='fw-medium'>IMPORTANT:</span> In order for these styles to take effect you have to placed them below:<br><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;{% static "css/theme.min.css" %}&quot;&gt;</code></p>
+            <div class="bg-secondary overflow-hidden rounded-4">
+              <pre class="text-wrap bg-transparent border-0 text-dark p-4" id="custom-generated-styles"></pre>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary w-100 w-sm-auto ms-sm-3" type="button" id="copy-styles-btn"><i class="ai-copy me-2 ms-n1"></i>Copy styles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "others/customization.html" %}
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+     {% include "header.html" %}
+
+<main class="main">
+  <div class="delivery">
+    <div class="delivery-progress">
+      <div class="message">..</div>
+      <div class="row">
+        <div class="delivery-item last-active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">Project Received</div>
+        </div>
+        <div class="delivery-item last-active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">Testing Started</div>
+        </div>
+        <div class="delivery-item last-active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">Functionality Testing</div>
+        </div>
+        <div class="delivery-item active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">Security Testing</div>
+        </div>
+        <div class="delivery-item last-active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">UI Testing</div>
+        </div>
+        <div class="delivery-item last-active">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+              <path d="M28 18c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 2c-4.41 0-8 3.59-8 8 0 4.411 3.59 8 8 8 4.411 0 8-3.589 8-8 0-4.41-3.589-8-8-8zm-.828-20c.801 0 1.555.312 2.121.879l5.414 5.414c.092.092.166.202.216.325.051.123.077.252.077.382v9h-2V8h-9v4c0 .553-.447 1-1 1H12c-.552 0-1-.447-1-1V8H2v24h14v2H2c-1.102 0-2-.897-2-2V7l.007-.036c.003-.072.025-.14.043-.211.015-.056.022-.115.046-.167.024-.052.064-.096.097-.144.042-.06.079-.121.133-.171l.022-.028L6.756.727C7.301.258 7.996 0 8.713 0zm.829 22.5c.552 0 1 .448 1 1V28c0 .265-.106.52-.293.707l-2.25 2.25c-.195.195-.451.293-.707.293-.256 0-.512-.098-.707-.293-.391-.39-.391-1.023 0-1.414L27 27.586V23.5c0-.552.446-1 1-1zM14 27v2H6v-2h8zm16-12c.552 0 1 .448 1 1H31v1l-.983-.001-.016.001H25v-1l.007-.116c.058-.497.48-.884.994-.884zM22 8h-9v3h9V8zm-8.618-6H8.713c-.239 0-.47.086-.652.243L3.696 6h7.686l2-4zm13.79 0h-5.553l2 4h7.967l-3.707-3.707c-.186-.186-.444-.293-.707-.293zm-7.79 0h-3.763l-2 4h7.763l-2-4z"></path>
+            </svg>
+          </div>
+          <div class="title">Performance last-active</div>
+        </div>
+      </div>
+    </div>
+    <div class="delivery-products">
+      <div class="message">Project Details</div>
+      <div class="row">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://yourgynac.com/assets/images/full%20logo.png" alt="Company Logo" />
+          </div>
+          <div class="product-content">
+             <div class="product-info">
+          <div class="item">
+            <div class="title">Project Name</div>
+            <div class="content">App Testing</div>
+          </div>
+          <div class="item">
+            <div class="title">Client Name</div>
+            <div class="content">Prateek Joon</div>
+          </div>
+          <div class="item">
+            <div class="title">Project Start Date</div>
+            <div class="content">19-04-2025 23:59 Tuesday</div>
+          </div>
+          <div class="item">
+            <div class="title">Companay</div>
+            <div class="content">YourGyanc</div>
+          </div>
+          <div class="item">
+            <div class="title">Project Budget</div>
+            <div class="content">NA</div>
+          </div>
+          <div class="item">
+            <div class="title">Project Deadline</div>
+            <div class="content">22-04-2025 23:59 Tuesday</div>
+          </div>
+          <div class="item">
+            <div class="title">Project Leader</div>
+            <div class="content">Anubhav Agarwal</div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Footer-->
+{% include "footer.html" %}<!-- partial -->
+  
+</body>
+</html>

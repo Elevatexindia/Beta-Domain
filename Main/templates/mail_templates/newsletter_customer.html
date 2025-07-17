@@ -1,0 +1,95 @@
+<!-- templates/mail_templates/subscription_confirmation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .message {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .powered-by {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .powered-by a {
+            color: #333;
+            text-decoration: none;
+        }
+        .powered-by a:hover {
+            text-decoration: underline;
+        }
+        .powered-by img {
+            max-width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Subscription Confirmation</h2>
+        </div>
+        <div class="logo">
+            <a href="http://www.elevatebharat.com" target="_blank"><img src="https://elevatebharat.com/static/img/landing/intro/ElevateBharat_Logo.png" alt="ElevateBharat Logo"></a>
+        </div>
+        <div class="content">
+            <p>Dear Subscriber,</p>
+            <div class="message">
+                <p><strong>Thank you for subscribing to our newsletter!</strong></p>
+            </div>
+            <p>Best regards,<br>{{ company_name }}<br>{{ tagline }}</p>
+        </div>
+        <div class="footer">
+            <p>&copy; {{ company_name }} {{ year }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!-- your_app/templates/your_app/email_template.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #253357; /* Dark blue color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .message {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .powered-by {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .powered-by a {
+            color: #333;
+            text-decoration: none;
+        }
+        .powered-by a:hover {
+            text-decoration: underline;
+        }
+        .powered-by img {
+            max-width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Contact Form Submission</h2>
+        </div>
+        <div class="logo">
+            <a href="http://www.elevatebharat.com" target="_blank"><img src="https://elevatebharat.com/static/img/landing/intro/ElevateBharat_Logo.png" alt="ElevateBharat Logo"></a>
+        </div>
+        <div class="content">
+            <p>Dear Team,</p>
+            <p class="message">A new contact form submission has been received:</p>
+            <p>New contact form submission:</p>
+            <p class="highlight">Name: {{ name }}</p>
+            <p class="highlight">Company: {{ company }}</p>
+            <p class="highlight">Email: {{ email }}</p>
+            <p class="highlight">Phone Number: {{ phone_number }}</p>
+            <p><strong>Services Requested:</strong></p>
+            <ul>
+                {% if website_development %}
+                    <li><p class="highlight">Website Development</p></li>
+                {% endif %}
+                {% if app_development %}
+                    <li><p class="highlight">App Development</p></li>
+                {% endif %}
+                {% if marketing %}
+                    <li><p class="highlight">Marketing</p></li>
+                {% endif %}
+                {% if other %}
+                    <li><p class="highlight">Other: {{ other_description }}</p></li>
+                {% endif %}
+            </ul>
+            <p><strong>Message:</strong></p>
+            <p><strong style="background-color: yellow;">{{ message }}</strong></p>
+            <p>Thank you for your attention.</p>
+            <p>Best regards,<br>{{ company_name }}<br>{{ tagline }}</p>
+        </div>
+        <div class="footer">
+            <p>&copy; {{ company_name }} {{ year }}</p>
+        </div>
+    </div>
+</body>
+</html>

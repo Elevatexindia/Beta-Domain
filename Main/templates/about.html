@@ -1,0 +1,599 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About us | ElavateBharat</title>
+    <!-- SEO Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="about elevatebharat, About elevatebharat, About elevatebharat website, About developerkk company, About Krishnaveer Singh Company, About elevatebharat by Krishnaveer, About website by developerkk, ElavateBharat, About elevatebharat Aonla, About elevatebharat by Krishnaveer, Best Website developement company in India ,Best Website developemt company, Web Development, Women's Health, elevatebharat, Experienced Web developers, Web development services, College projects, Customer service solutions, ElevateX India, DeveloperKK Website design, Web development company, Custom web solutions, Responsive web design, Client-focused web development, SEO-friendly websites, PHP, HTML, CSS, Mobile app development, Content management systems (CMS), E-commerce solutions, User experience (UX) design, Quality web development, Tech-savvy solutions, Innovative web design, Digital solutions for businesses" />
+    <meta name="description" content="At ElavateBharat, it's not just business; it's about building lasting relationships. Explore our About page to learn about our founder and the values that drive our company to provide expert web development and unparalleled customer care." />
+    <!-- Robot.txt -->
+    <meta name="robots" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="AdsBot-Google" content="index,follow" />
+    <meta property="og:site_name" content="https://elevatebharat.com">
+    <meta property="og:title" content="About us | ElavateBharat">
+    <meta property="og:description" content="ElavateBharat: Your Partner for Technical Excellence and Growth. 🚀 We specialize in web development, college projects, and outstanding customer service to empower startups and businesses. Discover how we can elevate your online presence and help you achieve your goals with innovation, quality, and unwavering support."/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevatebharat.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://elevatebharat.com">
+    <meta name="application-name" content="About us | ElavateBharat" />
+    <meta name="apple-mobile-web-app-title" content="About us | ElavateBharat "/>
+    <meta property="og:description" content="ElavateBharat: Your go-to source for professional web development, college project assistance, and exceptional customer service. We're dedicated to helping startups and businesses achieve their goals with innovation and quality. Explore our services and discover the ElavateBharat difference today!" />
+	  <link rel = "icon" href = "{% static "img/landing/intro/icon.png" %}" type = "image/x-icon">
+    <!-- Favicon and Touch Icons-->
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <link rel="mask-icon" color="#6366f1" href="{% static "favicon/safari-pinned-tab.svg" %}">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="{% static "favicon/browserconfig.xml" %}">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+      
+      
+    </script>
+    <!-- Page loading styles-->
+    <style>
+{% include "others/pageloading.html" %}
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="{% static "vendor/swiper/swiper-bundle.min.css" %}"/>
+    <link rel="stylesheet" media="screen" href="{% static "vendor/aos/dist/aos.css" %}"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{% static "css/theme.min.css" %}">
+    <!-- Customizer generated styles-->
+    <style id="customizer-styles">:root{--ar-primary:#1a3a5b;--ar-primary-rgb:26,58,91;--ar-link-color:#1a3a5b;--ar-link-hover-color:#012142;}.btn-primary{--ar-btn-bg:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#012142;--ar-btn-hover-border-color:#012142;--ar-btn-active-bg:#012142;--ar-btn-active-border-color:#012142;--ar-btn-disabled-bg:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}.btn-outline-primary{--ar-btn-color:#1a3a5b;--ar-btn-border-color:#1a3a5b;--ar-btn-hover-bg:#1a3a5b;--ar-btn-hover-border-color:#1a3a5b;--ar-btn-active-bg:#1a3a5b;--ar-btn-active-border-color:#1a3a5b;--ar-btn-disabled-color:#1a3a5b;--ar-btn-disabled-border-color:#1a3a5b;}</style>
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body class="bg-secondary">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Customizer modal-->
+    <div class="modal fade" id="customizer-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Your custom styles</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <p class="mb-3">Grab the generated styles below. Wrap them inside <code>&lt;style&gt;</code> tag and put in the <code>&lt;head&gt;</code> section of your HTML document.</p>
+            <p class="mb-4"><span class='fw-medium'>IMPORTANT:</span> In order for these styles to take effect you have to placed them below:<br><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;{% static "css/theme.min.css" %}&quot;&gt;</code></p>
+            <div class="bg-secondary overflow-hidden rounded-4">
+              <pre class="text-wrap bg-transparent border-0 text-dark p-4" id="custom-generated-styles"></pre>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary w-100 w-sm-auto ms-sm-3" type="button" id="copy-styles-btn"><i class="ai-copy me-2 ms-n1"></i>Copy styles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "others/customization.html" %}
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+      {% include "header.html" %}
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="position-relative overflow-hidden pt-5">
+        <div class="container position-relative zindex-2 pt-4 pt-sm-5 mt-2 mt-sm-0 mt-md-2 mt-lg-3 mt-xl-4 mt-xxl-5">
+          <!-- Breadcrumb-->
+          <nav aria-label="breadcrumb">
+            <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+              <li class="breadcrumb-item"><a href="/home/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">About-Us</li>
+            </ol>
+          </nav>
+          <div class="row justify-content-center py-4">
+            <div class="col-lg-11 col-xl-10 text-center pb-2 pb-sm-3 mb-lg-2 mb-xl-3">
+              <h1 class="display-2 fw-normal mb-0"><span class='fw-bold'>Segment your audience</span> using a variety of methods</h1>
+            </div>
+          </div>
+          <div class="parallax">
+            <div class="parallax-layer" data-depth="-0.05"><img class="d-dark-mode-none" src="{% static "img/about/product/hero/01-light.png" %}" alt="Layer"><img class="d-none d-dark-mode-block" src="{% static "img/about/product/hero/01-dark.png" %}" alt="Layer"></div>
+            <div class="parallax-layer" data-depth="0.1"><img class="d-dark-mode-none" src="{% static "img/about/product/hero/02-light.png" %}" alt="Layer"><img class="d-none d-dark-mode-block" src="{% static "img/about/product/hero/02-dark.png" %}" alt="Layer"></div>
+            <div class="parallax-layer zindex-2" data-depth="0.2"><img class="d-dark-mode-none" src="{% static "img/about/product/hero/03-light.png" %}" alt="Layer"><img class="d-none d-dark-mode-block" src="{% static "img/about/product/hero/03-dark.png" %}" alt="Layer"></div>
+            <div class="parallax-layer" data-depth="-0.2"><img class="d-dark-mode-none" src="{% static "img/about/product/hero/04-light.png" %}" alt="Layer"><img class="d-none d-dark-mode-block" src="{% static "img/about/product/hero/04-dark.png" %}" alt="Layer"></div>
+            <div class="parallax-layer" data-depth="-0.25"><img class="d-dark-mode-none" src="{% static "img/about/product/hero/05-light.png" %}" alt="Layer"><img class="d-none d-dark-mode-block" src="{% static "img/about/product/hero/05-dark.png" %}" alt="Layer"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Stats-->
+      {% load static %}
+      {% load humanize %}
+      
+      <section class="container pb-2 pb-sm-3 pb-md-4 pb-lg-5 mb-xl-3 mb-xxl-5">
+          <div class="bg-light rounded-5 py-4 py-md-5 px-lg-5">
+              <div class="row row-cols-2 row-cols-md-4 g-0">
+                  <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
+                      <div class="position-absolute top-50 end-0 translate-middle-y border-end" style="height: 60px;"></div>
+                      <div class="p-3 px-sm-0 py-sm-4">
+                          <div class="h2 display-5 text-primary mb-0">{{ customer_stats.happy_clients|intcomma }}+</div><span>Happy clients</span>
+                      </div>
+                  </div>
+                  <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
+                      <div class="position-absolute top-50 end-0 translate-middle-y border-end d-none d-md-block" style="height: 60px;"></div>
+                      <div class="p-3 px-sm-0 py-sm-4">
+                          <div class="h2 display-5 text-primary mb-0">{{ customer_stats.projects_completed|intcomma }}</div><span>Projects completed</span>
+                      </div>
+                  </div>
+                  <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
+                      <div class="position-absolute top-50 end-0 translate-middle-y border-end" style="height: 60px;"></div>
+                      <div class="p-3 px-sm-0 py-sm-4">
+                          <div class="h2 display-5 text-primary mb-0">{{ customer_stats.full_time_specialists|intcomma }}+</div><span>Full time specialists</span>
+                      </div>
+                  </div>
+                  <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
+                      <div class="p-3 px-sm-0 py-sm-4">
+                          <div class="h2 display-5 text-primary mb-0">{{ customer_stats.awards_won|intcomma }}</div><span>Awards won</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- Services grid-->
+      <!-- Industries (Carousel on screens < 992px)-->
+      <section class="container pb-5 pt-3 pt-sm-4 pt-lg-5 my-xl-3 my-xxl-5">
+        <h2 class="h1 text-center">Industries we work in</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">We have been helping businesses in the following industries for over a decade</p>
+        <!-- Swiper slider-->
+        <div class="swiper" data-swiper-options="
+      {
+        &quot;spaceBetween&quot;: 24,
+        &quot;pagination&quot;: {
+          &quot;el&quot;: &quot;.swiper-pagination&quot;,
+          &quot;clickable&quot;: true
+        },
+        &quot;breakpoints&quot;: {
+          &quot;576&quot;: { &quot;slidesPerView&quot;: 2 },
+          &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }
+        }
+      }
+    ">
+          <div class="swiper-wrapper">
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/01.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">E-commerce</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Customized E-commerce Platforms</li>
+                    <li class="mb-2">Seamless Integrations</li>
+                    <li class="mb-2">Advanced Analytics and Insights</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/02.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Healthcare</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Advanced Telemedicine Solutions</li>
+                    <li class="mb-2">Secure Health Information Systems</li>
+                    <li class="mb-2">Innovative AI and Analytics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/03.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Education</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Advanced E-Learning Platforms</li>
+                    <li class="mb-2">Comprehensive Management Systems</li>
+                    <li class="mb-2">Customized EdTech Solutions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination (bullets)-->
+          <div class="swiper-pagination position-relative bottom-0 mt-2 pt-4 d-lg-none"></div>
+        </div>
+        <!-- Read more button-->
+        <div class="text-center pt-4 mt-2 mt-lg-0 pt-lg-5"><a class="btn btn-primary" href="#">See all industries</a></div>
+      </section>
+      <!-- Clients (Logos autoplay slider)-->
+      <section class="pb-5 pt-2 pt-sm-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+        <div class="container pb-4 mb-2 mb-lg-3">
+          <h2 class="h1 text-center">Our clients</h2>
+          <p class="text-center mb-0">More than 2,000 clients using ElavateBharat to analyze data</p>
+        </div>
+        <div class="swiper pb-4" data-swiper-options="{
+      &quot;spaceBetween&quot;: 24,
+      &quot;loop&quot;: true,
+      &quot;grabCursor&quot;: false,
+      &quot;centeredSlides&quot;: true,
+      &quot;autoplay&quot;: {
+        &quot;delay&quot;: 0,
+        &quot;disableOnInteraction&quot;: false
+      },
+      &quot;freeMode&quot;: true,
+      &quot;speed&quot;: 10000,
+      &quot;freeModeMomentum&quot;: false,
+      &quot;breakpoints&quot;: {
+        &quot;0&quot;: { &quot;slidesPerView&quot;: 2 },
+        &quot;400&quot;: { &quot;slidesPerView&quot;: 3 },
+        &quot;600&quot;: { &quot;slidesPerView&quot;: 4 },
+        &quot;800&quot;: { &quot;slidesPerView&quot;: 5 },
+        &quot;1200&quot;: { &quot;slidesPerView&quot;: 6 },
+        &quot;1400&quot;: { &quot;slidesPerView&quot;: 7 },
+        &quot;1600&quot;: { &quot;slidesPerView&quot;: 8 }
+      }
+    }">
+          <div class="swiper-wrapper" style="transition-timing-function: linear !important;">
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/01-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/01-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/02-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/02-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/03-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/03-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/04-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/04-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/05-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/05-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/06-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/06-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/03-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/03-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/05-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/05-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/02-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/02-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper" dir="rtl" data-swiper-options="{
+      &quot;spaceBetween&quot;: 24,
+      &quot;loop&quot;: true,
+      &quot;grabCursor&quot;: false,
+      &quot;centeredSlides&quot;: true,
+      &quot;autoplay&quot;: {
+        &quot;delay&quot;: 0,
+        &quot;disableOnInteraction&quot;: false
+      },
+      &quot;freeMode&quot;: true,
+      &quot;speed&quot;: 8500,
+      &quot;freeModeMomentum&quot;: false,
+      &quot;breakpoints&quot;: {
+        &quot;0&quot;: { &quot;slidesPerView&quot;: 2 },
+        &quot;400&quot;: { &quot;slidesPerView&quot;: 3 },
+        &quot;600&quot;: { &quot;slidesPerView&quot;: 4 },
+        &quot;800&quot;: { &quot;slidesPerView&quot;: 5 },
+        &quot;1200&quot;: { &quot;slidesPerView&quot;: 6 },
+        &quot;1400&quot;: { &quot;slidesPerView&quot;: 7 },
+        &quot;1600&quot;: { &quot;slidesPerView&quot;: 8 }
+      }
+    }">
+          <div class="swiper-wrapper" style="transition-timing-function: linear !important;">
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/06-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/06-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/05-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/05-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/04-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/04-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/02-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/02-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/03-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/03-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/01-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/01-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/04-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/04-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/02-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/02-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-gray rounded-4"><img class="d-block d-dark-mode-none mx-auto" src="{% static "img/landing/business-consulting/clients/03-dark.svg" %}" width="196" alt="Logo"><img class="d-none d-dark-mode-block mx-auto" src="{% static "img/landing/business-consulting/clients/03-light.svg" %}" width="196" alt="Logo"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CEO quote + Process steps-->
+      <section class="overflow-hidden">
+        <div class="container pb-5 pt-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+          <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
+            <!-- CEO quote-->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px;"><img class="d-block position-relative zindex-2" src="https://developerkk.in/assets/images/mylogo.png" alt="Nicolas Black">
+                <div class="bg-primary position-absolute start-0 bottom-0 w-100" style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem;"></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">Krishnaveer Singh</h2>
+                <p class="fs-xl text-muted mb-2">Founder ElavateBharat</p>
+                <div class="position-relative pt-4" style="max-width: 500px;">
+                  <div class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1">
+                    <svg class="text-border" width="155" height="111" viewBox="0 0 155 111" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"></path>
+                      <path d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative zindex-2 mb-0">Elevate Bharat is a company that <strong> specializes in providing comprehensive technical support to startups and businesses</strong>. With a team of skilled professionals, Elevate Bharat offers a range of services, including website development, application development, customer service, and more, to help companies grow and achieve their goals.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Steps-->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none">01</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Formulation of the problem</h3>
+                      <p class="card-text">Define challenges, set goals, and outline project scope for clear direction and focus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="250">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none">02</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Assessment of the current state</h3>
+                      <p class="card-text">Analyze strengths, weaknesses, and opportunities to inform strategic decisions and improvements.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="500">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none">03</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Business plan creation</h3>
+                      <p class="card-text">Develop a strategic plan with goals, timelines, and metrics aligned with organizational objectives.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="700">
+                  <div class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none">04</div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">Strategy implementation</h3>
+                      <p class="card-text">Execute plan, monitor progress, and adjust strategies for optimal results and stakeholder alignment.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials (Carousel)-->
+      <section class="container mt-n3 mt-sm-n2 pb-5 mb-md-2 mb-lg-3 mb-xl-4 mb-xxl-5">
+        <h2 class="h1 text-center pb-3 pb-lg-4">Testimonials</h2>
+        <!-- Swiper slider-->
+        <div class="swiper pb-1 pb-md-2 pb-lg-3 pb-xl-4" data-swiper-options="{
+      &quot;spaceBetween&quot;: 24,
+      &quot;loop&quot;: true,
+      &quot;autoHeight&quot;: true,
+      &quot;pagination&quot;: {
+        &quot;el&quot;: &quot;.swiper-pagination&quot;,
+        &quot;clickable&quot;: true
+      },
+      &quot;breakpoints&quot;: {
+        &quot;576&quot;: { &quot;slidesPerView&quot;: 2 },
+        &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }
+      }
+    }">
+          <div class="swiper-wrapper">
+            <!-- Item-->
+            <div class="swiper-slide">
+              <div class="card border-0 mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Radhika.jpg" %}" width="60" alt="Jane Cooper">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Radhika</div>
+                      <div class="fs-sm text-muted">Marketing Coordinator</div>
+                    </div>
+                  </div>
+                  <p class="card-text">ElevateBharat transformed our online presence with a sleek website that boosted our customer engagement significantly."</p>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Sanjay.jpg" %}" width="60" alt="Cameron Williamson">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Sanjay Gupta</div>
+                      <div class="fs-sm text-muted">E-commerce Manager</div>
+                    </div>
+                  </div>
+                  <p class="card-text">Thanks to ElevateBharat, our e-commerce platform is now user-friendly and sales have soared beyond expectations.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide">
+              <div class="card border-0 mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Amit.jpg" %}" width="60" alt="Wade Warren">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Amit Singh</div>
+                      <div class="fs-sm text-muted">IT Director</div>
+                    </div>
+                  </div>
+                  <p class="card-text">Impressed with ElevateBharat's seamless integration solutions; our operations are more efficient and customer satisfaction has improved.</p>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Meera.jpg" %}" width="60" alt="Leslie Alexander">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Meera Desai</div>
+                      <div class="fs-sm text-muted">Chief Executive Officer</div>
+                    </div>
+                  </div>
+                  <p class="card-text">ElevateBharat's strategic digital marketing services have expanded our reach and enhanced our brand visibility remarkably.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide">
+              <div class="card border-0 mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Priya.jpg" %}" width="60" alt="Esther Howard">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Priya Patel</div>
+                      <div class="fs-sm text-muted">Operations Manager</div>
+                    </div>
+                  </div>
+                  <p class="card-text">With ElevateBharat's custom software, our processes are streamlined, saving time and improving productivity across departments.</p>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Shreya.jpg" %}" width="60" alt="Brooklyn Simmons">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Shreya Gupta</div>
+                      <div class="fs-sm text-muted">Marketing Coordinator</div>
+                    </div>
+                  </div>
+                  <p class="card-text">ElevateBharat's Marketing software solutions have simplified our processes, allowing us to focus more on strategic initiatives and employee development.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide">
+              <div class="card border-0 mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Neha.jpg" %}" width="60" alt="Fannie Summers">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Neha Joshi</div>
+                      <div class="fs-sm text-muted">Sales Manager</div>
+                    </div>
+                  </div>
+                  <p class="card-text">ElevateBharat's SEO expertise significantly boosted our website traffic and conversions, leading to measurable business growth.</p>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="{% static "img/avatar/Anil.jpg" %}" width="60" alt="Robert Fox">
+                    <div class="ps-3">
+                      <div class="h6 mb-1">Anil Kumar</div>
+                      <div class="fs-sm text-muted">Finance Controller</div>
+                    </div>
+                  </div>
+                  <p class="card-text">ElevateBharat's meticulous attention to detail in financial software development has improved our operational efficiency and accuracy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination (bullets)-->
+          <div class="swiper-pagination position-relative bottom-0 mt-2 mt-md-3 mt-lg-4 pt-4"></div>
+        </div>
+      </section>
+      <!-- Case studies-->
+      <section class="container pt-2 pt-sm-4 pb-5 mb-lg-3 mb-xl-4 mb-xxl-5">
+        <h2 class="h1 text-center pb-3 pb-lg-4">Recent case studies</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Item-->
+          <div class="col">
+            <div class="card bg-primary border-0 h-100 overflow-hidden pt-3 pt-xl-4 px-lg-3 px-xl-4">
+              <div class="card-body position-relative zindex-2 pb-0">
+                <h3 class="h4 card-title text-light">Cloud Migration &amp; Optimization</h3>
+                <p class="card-text text-light opacity-80 pb-sm3 pb-md-4 mb-2">Cloud Migration and Optimization: Successfully migrated client infrastructure to the cloud, enhancing scalability and performance. Implemented optimization strategies that reduced costs and improved efficiency. This transition enabled seamless operations, better resource management, and a more agile, future-ready IT environment. Discover the transformative impact of our cloud solutions in this detailed case study.</p><a class="btn btn-lg btn-link text-light px-0" href="#">Read case study<i class="ai-arrow-right ms-2"></i></a>
+              </div>
+              <div class="d-flex justify-content-end mt-sm-n5 me-n4"><img src="{% static "img/landing/business-consulting/case-studies/Cloud_Computing.png" %}" width="347" alt="Image"></div>
+            </div>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card bg-faded-primary border-0 h-100 overflow-hidden pt-3 pt-xl-4 px-lg-3 px-xl-4">
+              <div class="card-body position-relative zindex-2 pb-0">
+                <h3 class="h4 card-title text-primary">Machine Learning Applications</h3>
+                <p class="card-text text-primary pb-sm3 pb-md-4 mb-2">Discover how our innovative machine learning solutions transformed client operations, enabling predictive analytics, automated decision-making, and enhanced data insights. Explore the strategies and technologies we employed to drive efficiency and create significant business value through advanced machine learning applications.</p><a class="btn btn-lg btn-link px-0" href="#">Read case study<i class="ai-arrow-right ms-2"></i></a>
+              </div>
+              <div class="d-flex justify-content-end mt-n4 mt-sm-n5 me-n4"><img src="{% static "img/landing/business-consulting/case-studies/Machine_Learning.png" %}" width="291" alt="Image"></div>
+            </div>
+          </div>
+        </div>
+        <!-- More button-->
+        <div class="text-center my-2 mt-sm-3 mt-lg-0 pt-4 pb-1 pb-sm-3 pb-md-4 pt-lg-5"><a class="btn btn-outline-primary" href="#">Read all case studies</a></div>
+      </section>
+      <!-- CTA-->
+      {% include "forms/schedule_call.html" %}
+    </main>
+    <!-- Footer-->
+    {% include "footer.html" %}
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="{% static "vendor/bootstrap/dist/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js" %}"></script>
+    <script src="{% static "vendor/parallax-js/dist/parallax.min.js" %}"></script>
+    <script src="{% static "vendor/swiper/swiper-bundle.min.js" %}"></script>
+    <script src="{% static "vendor/aos/dist/aos.js" %}"></script>
+    <!-- Main theme script-->
+    <script src="{% static "js/theme.min.js" %}"></script>
+    <!-- Customizer-->
+    <script>!function(){function e(e){return localStorage.getItem(e)}function r(e,r){localStorage.setItem(e,r)}var t=document.getElementById("customizer-styles"),n=document.getElementById("custom-generated-styles"),o=`\n    :root {\n      ${e("theme-primary")&&`--ar-primary: ${e("theme-primary")};`}\n      ${e("theme-primary-rgb")&&`--ar-primary-rgb: ${e("theme-primary-rgb")};`}\n      ${e("theme-warning")&&`--ar-warning-rgb: ${e("theme-warning")};`}\n      ${e("theme-warning-rgb")&&`--ar-warning-rgb: ${e("theme-warning-rgb")};`}\n      ${e("theme-info")&&`--ar-info-rgb: ${e("theme-info")};`}\n      ${e("theme-info-rgb")&&`--ar-info-rgb: ${e("theme-info-rgb")};`}\n      ${e("theme-success")&&`--ar-success-rgb: ${e("success-info")};`}\n      ${e("theme-success-rgb")&&`--ar-success-rgb: ${e("success-info-rgb")};`}\n      ${e("theme-danger")&&`--ar-danger-rgb: ${e("danger-info")};`}\n      ${e("theme-danger-rgb")&&`--ar-danger-rgb: ${e("danger-info-rgb")};`}\n      ${e("theme-font-family")&&`--ar-body-font-family: ${e("theme-font-family")};`}\n      ${e("theme-root-font-size")&&`--ar-root-font-size: ${e("theme-root-font-size")};`}\n      ${e("theme-body-font-size")&&`--ar-body-font-size: ${e("theme-body-font-size")};`}\n      ${e("theme-border-width")&&`--ar-border-width: ${e("theme-border-width")};`}\n      ${e("theme-border-radius")&&`--ar-border-radius: ${e("theme-border-radius")};`}\n      ${e("theme-border-radius-sm")&&`--ar-border-radius-sm: ${e("theme-border-radius-sm")};`}\n      ${e("theme-border-radius-lg")&&`--ar-border-radius-lg: ${e("theme-border-radius-lg")};`}\n      ${e("theme-border-radius-xl")&&`--ar-border-radius-xl: ${e("theme-border-radius-xl")};`}\n      ${e("theme-border-radius-2xl")&&`--ar-border-radius-2xl: ${e("theme-border-radius-2xl")};`}\n      ${e("theme-primary")&&`--ar-link-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-link-hover-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n    }\n    .btn-primary {\n      ${e("theme-primary")&&`--ar-btn-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-warning {\n      ${e("theme-warning")&&`--ar-btn-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-info {\n      ${e("theme-info")&&`--ar-btn-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-success {\n      ${e("theme-success")&&`--ar-btn-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-danger {\n      ${e("theme-danger")&&`--ar-btn-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n    .btn-outline-primary {\n      ${e("theme-primary")&&`--ar-btn-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-outline-warning {\n      ${e("theme-warning")&&`--ar-btn-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-outline-info {\n      ${e("theme-info")&&`--ar-btn-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-outline-success {\n      ${e("theme-success")&&`--ar-btn-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-outline-danger {\n      ${e("theme-danger")&&`--ar-btn-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n  `,a=o;a=o.replace(/null|\s*(?![A-Z])/g,"");t.append(a),a.split("}").map(function(e){-1!==e.indexOf("{--")&&n.append(e+"}")});var i={root:t.sheet.cssRules[0],primaryBtn:t.sheet.cssRules[1],warningBtn:t.sheet.cssRules[2],infoBtn:t.sheet.cssRules[3],successBtn:t.sheet.cssRules[4],dangerBtn:t.sheet.cssRules[5],primaryOutlineBtn:t.sheet.cssRules[6],warningOutlineBtn:t.sheet.cssRules[7],infoOutlineBtn:t.sheet.cssRules[8],successOutlineBtn:t.sheet.cssRules[9],dangerOutlineBtn:t.sheet.cssRules[10]};function b(){n.innerHTML=i.root.cssText.replace(/null|\s*(?![A-Z])/g,""),n.innerHTML+=-1===i.primaryBtn.cssText.indexOf("{ }")?i.primaryBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningBtn.cssText.indexOf("{ }")?i.warningBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoBtn.cssText.indexOf("{ }")?i.infoBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successBtn.cssText.indexOf("{ }")?i.successBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerBtn.cssText.indexOf("{ }")?i.dangerBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.primaryOutlineBtn.cssText.indexOf("{ }")?i.primaryOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningOutlineBtn.cssText.indexOf("{ }")?i.warningOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoOutlineBtn.cssText.indexOf("{ }")?i.infoOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successOutlineBtn.cssText.indexOf("{ }")?i.successOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerOutlineBtn.cssText.indexOf("{ }")?i.dangerOutlineBtn.cssText.replace(/ /g,""):""}function s(e){var r=0,t=0,n=0;return 4==e.length?(r="0x"+e[1]+e[1],t="0x"+e[2]+e[2],n="0x"+e[3]+e[3]):7==e.length&&(r="0x"+e[1]+e[2],t="0x"+e[3]+e[4],n="0x"+e[5]+e[6]),+r+","+ +t+","+ +n}function c(e,r){var t=parseInt(e.replace("#",""),16),n=Math.round(2.55*r),o=(t>>16)+n,a=(t>>8&255)+n,i=(255&t)+n;return"#"+(16777216+65536*(o<255?o<1?0:o:255)+256*(a<255?a<1?0:a:255)+(i<255?i<1?0:i:255)).toString(16).slice(1)}for(var l=document.querySelectorAll("#theme-colors .color-swatch"),d=0;d<l.length;d++){var m=l[d].querySelector("label"),h=l[d].querySelector('input[type="color"]');colorInput=l[d].querySelector('input[type="text"]'),colorInput.value=e(l[d].id)||colorInput.value,h.value=e(l[d].id)||h.value,m.style.backgroundColor=e(l[d].id)||h.value,h.addEventListener("input",function(e){var n=e.target.parentElement.querySelector("label"),o=e.target.parentElement.querySelector('input[type="text"]'),a=e.target.value;t.sheet.cssRules[d+1];r("theme-"+e.target.id,a),r("theme-"+e.target.id+"-rgb",s(a)),r("theme-"+e.target.id+"-btn-hover-active-border-bg-color",c(a,-10)),n.style.backgroundColor=a,o.value=a,i.root.style.setProperty("--ar-"+e.target.id,a),i.root.style.setProperty("--ar-"+e.target.id+"-rgb",s(a)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",a),"primary"===e.target.id&&(r("theme-link-hover-color",c(a,-10)),i.root.style.setProperty("--ar-link-color",a),i.root.style.setProperty("--ar-link-hover-color",c(a,-10))),b()}),colorInput.addEventListener("change",function(e){var t=e.target.parentElement.querySelector("label"),n=e.target.parentElement.querySelector('input[type="color"]'),o=e.target.value;0!=o.length&&o.startsWith("#")&&(r("theme-"+n.id,o),r("theme-"+n.id+"-rgb",s(o)),r("theme-"+n.id+"-btn-hover-active-border-bg-color",c(o,-10)),t.style.backgroundColor=o,n.value=o,i.root.style.setProperty("--ar-"+n.id,o),i.root.style.setProperty("--ar-"+n.id+"-rgb",s(o)),i[n.id+"Btn"].style.setProperty("--ar-btn-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",o),"primary"===n.id&&(r("theme-link-hover-color",c(o,-10)),i.root.style.setProperty("--ar-link-color",o),i.root.style.setProperty("--ar-link-hover-color",c(o,-10))),b())})}var g=document.getElementById("font-url"),u=document.getElementById("google-font");u.href=e("theme-font-url")||g.value,g.value=e("theme-font-url")||g.value,g.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-url",t),u.href=t});var v=document.getElementById("body-font-family");v.value=e("theme-font-family")||v.value,v.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-family",t),i.root.style.setProperty("--ar-body-font-family",t),b()});var $=document.getElementById("root-font-size");$.value=e("theme-root-font-size")||$.value,$.addEventListener("change",function(e){var t=e.target.value;r("theme-root-font-size",t),i.root.style.setProperty("--ar-root-font-size",t),b()});var y=document.getElementById("body-font-size");y.value=e("theme-body-font-size")||y.value,y.addEventListener("change",function(e){var t=e.target.value;r("theme-body-font-size",t),i.root.style.setProperty("--ar-body-font-size",t),b()});var p=document.getElementById("border-width");p.value=parseInt(e("theme-border-width"))||p.value,p.addEventListener("input",function(e){var t=e.target.value;r("theme-border-width",t+"px"),i.root.style.setProperty("--ar-border-width",t+"px"),b()});var f=document.getElementById("border-radius");f.value=parseFloat(e("theme-border-radius"))||f.value,f.addEventListener("input",function(e){var t=e.target.value;r("theme-border-radius",t+"rem"),i.root.style.setProperty("--ar-border-radius",t+"rem"),b()});var B=document.querySelectorAll('#theme-border-radiuses input[type="number"');for(d=0;d<B.length;d++)B[d].value=e("theme-"+B[d].id+"multiplier")||B[d].value,B[d].addEventListener("input",function(e){var t=e.target.value;r("theme-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),r("theme-"+e.target.id+"multiplier",t),i.root.style.setProperty("--ar-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),b()});var w=document.getElementById("customizer"),x=document.getElementById("customizer-btns");e("theme-customizer-btns")&&x.classList.remove("d-none"),w.addEventListener("change",function(e){r("theme-customizer-btns",!0),x.classList.remove("d-none")}),document.getElementById("customizer-reset-btn").addEventListener("click",function(){for(var e=[],r=0;r<localStorage.length;r++)"theme"==localStorage.key(r).substring(0,5)&&e.push(localStorage.key(r));for(r=0;r<e.length;r++)localStorage.removeItem(e[r]);window.location.reload()});var P=document.getElementById("copy-styles-btn");P.addEventListener("click",function(){var e=document.createRange();e.selectNode(n),window.getSelection().removeAllRanges(),window.getSelection().addRange(e),navigator.clipboard.writeText(n.innerHTML),this.innerHTML='<i class="ai-check me-2 ms-n1"></i>Copied!',setTimeout(function(){P.innerHTML='<i class="ai-copy me-2 ms-n1"></i>Copy styles'},2e3)})}();</script>
+  </body>
+</html>

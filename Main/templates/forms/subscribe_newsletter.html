@@ -1,0 +1,44 @@
+<section class="container" id='newsletter'>
+    <div class="bg-dark position-relative rounded-5 overflow-hidden px-4 pt-1 pb-2 py-sm-4 py-lg-5">
+      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
+      <div class="position-absolute top-0 end-0 pe-5 zindex-2">
+        <svg class="me-5" width="514" height="254" viewBox="0 0 514 254" fill="white" fill-opacity=".03" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="257" cy="0.5" rx="257" ry="253.5"></ellipse>
+        </svg>
+      </div>
+      <div class="d-none d-lg-flex position-absolute start-0 bottom-0 ms-n4">
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">  
+          <svg class="text-primary" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="58.5" cy="58.5" r="58.5"></circle>
+          </svg>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
+          <svg class="text-warning" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="dark-mode position-relative zindex-3 text-center py-5 my-xl-3 mx-auto" style="max-width: 565px;">
+        <h2 class="display-5">Subscribe to Newsletter</h2>
+        <p class="fs-lg pb-3 mb-3 mb-lg-4">Subscribe to our newsletter to receive early discount offers, new templates info and updates.</p>
+        <form class=" mx-auto" method="post" action="/" novalidate style="max-width: 500px;" id="subscribe-form">
+            {% csrf_token %}
+            <div class="input-group">
+                <span class="input-group-text"><i class="ai-mail"></i></span>
+                <input class="form-control" type="email" name="email" placeholder="Enter your email" required id="email">
+                <button class="btn btn-primary" type="submit" name="subscribe" id="subscribe-button">Subscribe</button>
+            </div>
+            <div class="subscription-status mx-auto">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+

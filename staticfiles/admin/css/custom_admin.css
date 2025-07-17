@@ -1,0 +1,19 @@
+/* Froala Dark Mode Overrides */
+.fr-box, .fr-wrapper, .fr-toolbar {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+}
+
+.fr-toolbar .fr-command {
+    color: #ffffff !important;
+}
+
+.fr-element {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+.fr-placeholder {
+    color: #888 !important;
+}

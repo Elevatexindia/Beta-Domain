@@ -1,0 +1,15 @@
+Blogs
+Contact
+About
+Index
+
+Theme link: https://themeholy.com/html/agenxe/demo/home-2.html
+
+extra
+MainApp/Template
+    Blogy
+    blogi
+
+
+
+Have to disable signup in Blog Section for security
