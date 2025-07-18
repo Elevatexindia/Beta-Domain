@@ -6,7 +6,59 @@
         <input class="form-check-input" type="checkbox" id="theme-mode">
         <label class="form-check-labelcd" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
         <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-      </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/signin/" rel="noopener"><i class="ai-login fs-xl me-2 ms-n1"></i>Sign In</a>
+      </div>
+        {% if user.is_authenticated %}
+          <div class="dropdown nav d-none d-sm-block order-lg-3">
+            <a class="nav-link d-flex align-items-center p-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="border rounded-circle" src="{% if user.userprofile and user.userprofile.profile_image %}{{ user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="48" alt="{{ user.username }}">
+              <div class="ps-2">
+                <div class="fs-xs lh-1 opacity-60">Hello,</div>
+                <div class="fs-sm dropdown-toggle">{{ user.username }}</div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end my-1">
+              <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Account</h6>
+              <a class="dropdown-item" href="account-overview.html">
+                <i class="ai-user-check fs-lg opacity-70 me-2"></i>
+                Overview
+              </a>
+              <a class="dropdown-item" href="account-settings.html">
+                <i class="ai-settings fs-lg opacity-70 me-2"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="account-billing.html">
+                <i class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>
+                Billing
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Dashboard</h6>
+              <a class="dropdown-item" href="account-orders.html">
+                <i class="ai-cart fs-lg opacity-70 me-2"></i>
+                Orders
+              </a>
+              <a class="dropdown-item" href="account-earnings.html">
+                <i class="ai-activity fs-lg opacity-70 me-2"></i>
+                Earnings
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="account-chat.html">
+                <i class="ai-messages fs-lg opacity-70 me-2"></i>
+                Chat
+                <span class="badge bg-danger ms-auto">4</span>
+              </a>
+              <a class="dropdown-item" href="account-favorites.html">
+                <i class="ai-heart fs-lg opacity-70 me-2"></i>
+                Favorites
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="account-signin.html">
+                <i class="ai-logout fs-lg opacity-70 me-2"></i>
+                Sign out
+              </a>
+            </div>
+          </div>
+        {% else %}
+          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/signin/" rel="noopener"><i class="ai-login fs-xl me-2 ms-n1"></i>Sign In</a>
+          {% endif %}
       <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
       <nav class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
@@ -16,7 +68,7 @@
           <li class="nav-item"><a class="nav-link {% if request.path == '/aboutus/' %}dropdown-toggle active{% endif %}" href="/aboutus/">About us</a></li>
           <li class="nav-item"><a class="nav-link {% if request.path == '/contactus/' %}dropdown-toggle active{% endif %}" href="/contactus/">Contact us</a></li>
         </ul>
-        <div class="d-sm-none p-3 mt-n3"><a class="btn btn-primary w-100  mb-1" href="/signin/" rel="noopener"><i class="ai-login fs-xl me-2 ms-n1"></i>Sign In</a></div>
+          <div class="d-sm-none p-3 mt-n3"><a class="btn btn-primary w-100  mb-1" href="/signin/" rel="noopener"><i class="ai-login fs-xl me-2 ms-n1"></i>Sign In</a></div>
       </nav>
     </div>
   </header>

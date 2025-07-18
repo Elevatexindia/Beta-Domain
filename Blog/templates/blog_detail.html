@@ -122,11 +122,14 @@
           <div class="col-lg-4 col-xl-3 offset-xl-1">
             <div class="card border-0 bg-secondary">
               <div class="card-body text-center">
-                <img class="d-block rounded-circle mx-auto mb-3" src="{% static "img/landing/developerkk.png" %}" width="80" alt="Author image">
+                <img class="d-block rounded-circle mx-auto mb-3" src="{% if blog_obj.user.userprofile and blog_obj.user.userprofile.profile_image %}{{ blog_obj.user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="80" alt="Author image">
                 <h3 class="h5 mb-2 pb-1">{{ blog_obj.user.username }}</h3>
+                <span class="author-name"></span>
                 <!-- Optionally add author bio if available -->
-                <!-- <p class="fs-sm mb-4">{{ blog_obj.user.profile.bio }}</p> -->
-                <a class="btn btn-outline-primary btn-sm" href="#">Follow the author</a>
+                <p class="fs-sm mb-4">{% if blog_obj.user.userprofile.bio %}{{ blog_obj.user.userprofile.bio }}{% endif %}</p>
+                {% if blog_obj.user.userprofile and blog_obj.user.userprofile.portfolio_link %}
+                  <a class="btn btn-outline-primary btn-sm" href="{{ blog_obj.user.userprofile.portfolio_link }}" target="_blank" rel="noopener">Follow the author</a>
+                {% endif %}
               </div>
             </div>
           </div>

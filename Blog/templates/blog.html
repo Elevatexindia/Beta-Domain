@@ -185,22 +185,13 @@
                         <a href="{% url 'blog_detail' blog.slug %}"><button class="btn btn-primary" type="submit" name="subscribe" id="subscribe-button">Read More</button></a>
                         {% if blog.user.userprofile.portfolio_link %}
                         <a href="{{ blog.user.userprofile.portfolio_link }}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-                            {% if blog.user.userprofile.profile_image %}
-                                <img class="rounded-circle" src="{{ blog.user.userprofile.profile_image.url }}" width="32" alt="Post author">
-                            {% else %}
-                                <img class="rounded-circle" src="{% static "img/landing/developerkk.png" %}" width="32" alt="Post author">
-                            {% endif %}
+                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="32" alt="Post author">
                             <span class="author-name">{{ blog.user.username }}</span>
                         </a>
                         {% else %}
                         <span style="display: flex; align-items: center; gap: 8px;">
-                            {% if blog.user.userprofile.profile_image %}
-                                <img class="rounded-circle" src="{{ blog.user.userprofile.profile_image.url }}" width="32" alt="Post author">
-                            {% else %}
-                                <img class="rounded-circle" src="https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png" width="32" alt="Post author">
-                            {% endif %}
-                            <span class="author-name">{{ blog.user.username }}</span>
-                        </span>
+                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="32" alt="Post author">
+                            <span class="author-name">{% if blog.user.username %}{{ blog.user.username }}{% else %}Author{% endif %}</span>
                         {% endif %}
                     </div>
                     </div>
