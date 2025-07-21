@@ -190,7 +190,7 @@
                         </a>
                         {% else %}
                         <span style="display: flex; align-items: center; gap: 8px;">
-                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="32" alt="Post author">
+                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/other/success.png' %}{% endif %}" width="32" alt="Post author">
                             <span class="author-name">{% if blog.user.username %}{{ blog.user.username }}{% else %}Author{% endif %}</span>
                         {% endif %}
                     </div>
