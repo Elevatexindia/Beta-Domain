@@ -185,7 +185,7 @@
                         <a href="{% url 'blog_detail' blog.slug %}"><button class="btn btn-primary" type="submit" name="subscribe" id="subscribe-button">Read More</button></a>
                         {% if blog.user.userprofile.portfolio_link %}
                         <a href="{{ blog.user.userprofile.portfolio_link }}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/user.png' %}{% endif %}" width="32" alt="Post author">
+                            <img class="rounded-circle" src="{% if blog.user.userprofile.profile_image %}{{ blog.user.userprofile.profile_image.url }}{% else %}{% static 'img/other/success.png' %}{% endif %}" width="32" alt="Post author">
                             <span class="author-name">{{ blog.user.username }}</span>
                         </a>
                         {% else %}
