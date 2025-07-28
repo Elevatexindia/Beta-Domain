@@ -1,13 +1,21 @@
 {
-    "builds": [{
-      "src": "ElevateXIndia/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
-    }],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/ElevateXIndia/storage_backends.py"
-      }
-    ]
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.11",
+      "maxDuration": 10,
+      "memory": 512
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/ElevateXIndia/storage_backends.py"
+    }
+  ],
+  "builds": [
+    {
+      "src": "/ElevateXIndia/storage_backends.py",
+      "use": "@vercel/python"
+    }
+  ]
 }
