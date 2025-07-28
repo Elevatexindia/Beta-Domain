@@ -7,7 +7,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "ElevateXIndia/wsgi.py"
+        "dest": "/ElevateXIndia/storage_backends.py"
       }
     ]
 }
