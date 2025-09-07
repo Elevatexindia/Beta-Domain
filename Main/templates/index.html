@@ -567,6 +567,74 @@
         <div class="position-absolute top-0 start-0 w-50 h-100 bg-dark"></div>
         <div class="position-absolute top-0 end-0 w-50 h-100" style="background-color: #f6f9fc;"></div>
       </section>
+      <!-- Industries (Carousel on screens < 992px)-->
+      <section class="container pb-5 pt-3 pt-sm-4 pt-lg-5 my-xl-3 my-xxl-5">
+        <h2 class="h1 text-center">Industries we work in</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">We have been helping businesses in the following industries for over a decade</p>
+        <!-- Swiper slider-->
+        <div class="swiper" data-swiper-options="
+      {
+        &quot;spaceBetween&quot;: 24,
+        &quot;pagination&quot;: {
+          &quot;el&quot;: &quot;.swiper-pagination&quot;,
+          &quot;clickable&quot;: true
+        },
+        &quot;breakpoints&quot;: {
+          &quot;576&quot;: { &quot;slidesPerView&quot;: 2 },
+          &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }
+        }
+      }
+    ">
+          <div class="swiper-wrapper">
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/01.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">E-commerce</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Customized E-commerce Platforms</li>
+                    <li class="mb-2">Seamless Integrations</li>
+                    <li class="mb-2">Advanced Analytics and Insights</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/02.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Healthcare</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Advanced Telemedicine Solutions</li>
+                    <li class="mb-2">Secure Health Information Systems</li>
+                    <li class="mb-2">Innovative AI and Analytics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="swiper-slide h-auto">
+              <div class="card border-0 h-100">
+                <div class="card-img-top overflow-hidden"><img class="rounded-5 rounded-end-0" src="{% static "img/landing/business-consulting/industries/03.png" %}" alt="Image"></div>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Education</h3>
+                  <ul class="ps-4 mb-n2">
+                    <li class="mb-2">Advanced E-Learning Platforms</li>
+                    <li class="mb-2">Comprehensive Management Systems</li>
+                    <li class="mb-2">Customized EdTech Solutions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination (bullets)-->
+          <div class="swiper-pagination position-relative bottom-0 mt-2 pt-4 d-lg-none"></div>
+        </div>
+        <!-- Read more button-->
+        <div class="text-center pt-4 mt-2 mt-lg-0 pt-lg-5"><a class="btn btn-primary" href="#">See all industries</a></div>
+      </section>
       <!-- Customizer-->
        <!--
       <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
